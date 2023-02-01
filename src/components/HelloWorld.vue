@@ -97,7 +97,8 @@ export default {
 
       let content = html;
       let mimeType = 'text/html';
-      let filename = x.toLowerCase().replace(' ', '-') + 'signature.html';
+      let filename =
+        this.name.toLowerCase().replace(' ', '-') + 'signature.html';
 
       const a = document.createElement('a'); // Create "a" element
       const blob = new Blob([content], { type: mimeType }); // Create a blob (file-like object)
