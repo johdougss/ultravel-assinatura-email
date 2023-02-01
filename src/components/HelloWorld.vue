@@ -90,7 +90,7 @@ export default {
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet">
-          ${style} </head> </html> <body> ${el.outerHTML} </body>
+          ${style} </head> </html> <body> <table style="width: 370px;"><tbody><tr><td>${el.outerHTML}</td></tr></tbody></table>  </body>
       `;
 
       console.log(html);
