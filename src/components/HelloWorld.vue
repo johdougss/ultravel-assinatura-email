@@ -18,7 +18,7 @@
     <div>
       <div class="image">
         <img
-          src="https://raw.githubusercontent.com/johnathansantos/ultravel-assinatura-email/main/src/assets/2023-02-01_09h04_44.png"
+          src="https://raw.githubusercontent.com/johnathansantos/ultravel-assinatura-email/main/src/assets/signature-animation.gif"
           alt=""
         />
       </div>
@@ -82,7 +82,7 @@ export default {
       let el = this.$refs.preview;
       console.log(this.$refs);
 
-      let style = `<style type="text/css"> body{background: #efefef; font-family: 'Bai Jamjuree', sans-serif;}.card-wrapper{background: #efefef; padding: 20px; width: 700px;}.card{background-color: #fff; /*box-shadow: 0 10px 10px 0 #ccc;*/ width: 350px; border-radius: 10px; padding: 10px}.card .image{display: flex; justify-content: center; border: 1px solid #efefef; border-radius: 10px}.card .name{font-size: 20px; font-weight: bold; margin-top: 5px}.card .occupation{text-transform: uppercase; font-size: 10px; letter-spacing: 4px}.card .details{font-size: 12px; margin-top: 10px}.card .details span > img{width: 10px; height: 10px; margin-right: 4px}.card .social{display: flex; justify-content: space-between; margin-bottom: 4px}</style>`;
+      let style = `<style type="text/css"> body{background: #efefef; font-family: 'Bai Jamjuree', sans-serif;}.card-wrapper{background: #efefef; padding: 20px; width: 700px;}.card{background-color: #fff; /*box-shadow: 0 10px 10px 0 #ccc;*/ width: 350px; border-radius: 10px; padding: 10px}.card .image{display: flex; justify-content: center; border: 1px solid #efefef; border-radius: 10px}.card .image>img{max-width: 100%;}.card .name{font-size: 20px; font-weight: bold; margin-top: 5px}.card .occupation{text-transform: uppercase; font-size: 10px; letter-spacing: 4px}.card .details{font-size: 12px; margin-top: 10px}.card .details span > img{width: 10px; height: 10px; margin-right: 4px}.card .social{display: flex; justify-content: space-between; margin-bottom: 4px}</style>`;
 
       let html = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html> <head>
@@ -135,6 +135,9 @@ body {
     justify-content: center;
     border: 1px solid #efefef;
     border-radius: 10px;
+    & > img {
+      max-width: 100%;
+    }
   }
 
   .name {
